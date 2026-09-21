@@ -33,11 +33,12 @@
 | Re2 | 2022 网鼎杯 青龙组 | UPX 改段名脱壳、Unicorn 静态脱壳 | [wp](reverse/Re2/wp.md) |
 | strangeapp | 湾区杯 2025 | Android 脱壳、DEX 指令还原 | [wp](reverse/strangeapp/wp.md) |
 
-## Web (1)
+## Web (2)
 
 | 题目 | 赛事 / 平台 | 考点 | Writeup |
 | --- | --- | --- | --- |
 | go_session | — | gorilla/sessions 空 key 会话伪造、pongo2 SSTI、`{% include %}` 任意文件读 | [wp](web/go_session/wp.md) |
+| SecretVault | — | Go ReverseProxy hop-by-hop 头剥离（`Connection: X-User`）、Flask `X-User` 默认 admin | [wp](web/SecretVault/wp.md) |
 
 ## Misc (1)
 
