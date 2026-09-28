@@ -37,10 +37,11 @@
 | rabbit_hole | — | PE32 21×21 迷宫、唯一路径、`flag{md5(path)}` | [wp](reverse/rabbit_hole.md) |
 | strangeapp | 湾区杯 2025 | Android 脱壳、DEX 指令还原 | [wp](reverse/strangeapp.md) |
 
-## Web (2)
+## Web (3)
 
 | 题目 | 赛事 / 平台 | 考点 | Writeup |
 | --- | --- | --- | --- |
+| b4bycoffee | — | Spring Boot 反序列化、ROME `EqualsBean` 绕过黑名单、`CoffeeBean.toString` → `defineClass` RCE | [wp](web/b4bycoffee.md) |
 | go_session | — | gorilla/sessions 空 key 会话伪造、pongo2 SSTI、`{% include %}` 任意文件读 | [wp](web/go_session.md) |
 | SecretVault | — | Go ReverseProxy hop-by-hop 头剥离（`Connection: X-User`）、Flask `X-User` 默认 admin | [wp](web/SecretVault.md) |
 
