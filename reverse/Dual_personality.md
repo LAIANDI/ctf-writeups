@@ -321,7 +321,7 @@ memcmp(buf, TARGET, 32) == 0  ->  DASCTF{<buf>}
 
 ## 6. 完整脚本
 
-见 `exploits/dual_personality.py`（自包含，纯 Python 逆运算 + 正向校验）：
+见 `exploits/reverse/dual_personality.py`（自包含，纯 Python 逆运算 + 正向校验）：
 
 ```python
 #!/usr/bin/env python3
@@ -373,7 +373,7 @@ if __name__ == "__main__":
 
 ```bash
 cd /Users/laiandi/ctf
-.venv/bin/python exploits/dual_personality.py
+.venv/bin/python exploits/reverse/dual_personality.py
 ```
 
 ---
@@ -381,7 +381,7 @@ cd /Users/laiandi/ctf
 ## 7. 实际输出
 
 ```text
-$ .venv/bin/python exploits/dual_personality.py
+$ .venv/bin/python exploits/reverse/dual_personality.py
 input body : 6cc1e44811647d38a15017e389b3f704
 forward ok : True
 FLAG       : DASCTF{6cc1e44811647d38a15017e389b3f704}

@@ -146,7 +146,7 @@ DASCTF{8f3djoj9wedj2_dkc903cwckckdk}
 
 ## 6. 完整脚本
 
-见 `exploits/lrsa.py`：
+见 `exploits/crypto/lrsa.py`：
 
 ```python
 #!/usr/bin/env python3
@@ -194,7 +194,7 @@ if __name__ == "__main__":
 
 ```bash
 cd /Users/laiandi/ctf
-.venv/bin/python exploits/lrsa.py work/lrsa/output.txt
+.venv/bin/python exploits/crypto/lrsa.py work/lrsa/output.txt
 ```
 
 ---
@@ -202,7 +202,7 @@ cd /Users/laiandi/ctf
 ## 7. 实际输出
 
 ```text
-$ .venv/bin/python exploits/lrsa.py work/lrsa/output.txt
+$ .venv/bin/python exploits/crypto/lrsa.py work/lrsa/output.txt
 FLAG: DASCTF{8f3djoj9wedj2_dkc903cwckckdk}
 ```
 

@@ -156,7 +156,7 @@ pongo2 include -> 读取 /flag        -> flag{ced596c133b698a0346cc6f008e57268}
 
 ## 6. 完整脚本
 
-`exploits/go_session.py`：
+`exploits/web/go_session.py`：
 
 ```python
 #!/usr/bin/env python3
@@ -198,8 +198,8 @@ print(read_file(BASE, cookie, "/flag"))
 运行：
 
 ```bash
-.venv/bin/python exploits/go_session.py                       # 打远程
-.venv/bin/python exploits/go_session.py 127.0.0.1:11527       # 指定目标
+.venv/bin/python exploits/web/go_session.py                       # 打远程
+.venv/bin/python exploits/web/go_session.py 127.0.0.1:11527       # 指定目标
 ```
 
 ## 7. 实际输出

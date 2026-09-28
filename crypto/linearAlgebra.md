@@ -130,7 +130,7 @@ flag{b5932c2c-e210-4c39-9fb5-a7f35e861d32}
 
 ## 5. 完整脚本
 
-见 `exploits/linearAlgebra.py`（自包含，读取 `out` 即可）：
+见 `exploits/crypto/linearAlgebra.py`（自包含，读取 `out` 即可）：
 
 ```python
 #!/usr/bin/env python3
@@ -196,7 +196,7 @@ if __name__ == "__main__":
 
 ```bash
 cd /Users/laiandi/ctf
-.venv/bin/python exploits/linearAlgebra.py work/linearAlgebra/linearAlgebra/out
+.venv/bin/python exploits/crypto/linearAlgebra.py work/linearAlgebra/linearAlgebra/out
 ```
 
 ---
@@ -204,7 +204,7 @@ cd /Users/laiandi/ctf
 ## 6. 实际输出
 
 ```text
-$ .venv/bin/python exploits/linearAlgebra.py work/linearAlgebra/linearAlgebra/out
+$ .venv/bin/python exploits/crypto/linearAlgebra.py work/linearAlgebra/linearAlgebra/out
 flag{b5932c2c-e210-4c39-9fb5-a7f35e861d32}
 ```
 

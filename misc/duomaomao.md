@@ -336,7 +336,7 @@ print(res[0].text)
 
 ## 9. 完整 Exploit
 
-脚本：`exploits/duomaomao_solve.py`
+脚本：`exploits/misc/duomaomao_solve.py`
 
 ```python
 #!/usr/bin/env python3
@@ -348,7 +348,7 @@ from PIL import Image, ImageDraw
 
 BASE = "/Users/laiandi/ctf/work/misc1"
 # 33x30 位映射，来自 zxing-cpp core/src/maxicode/MCBitMatrixParser.cpp 的 BITNR
-# 完整脚本 exploits/duomaomao_solve.py 中已内联该 33 行常量表
+# 完整脚本 exploits/misc/duomaomao_solve.py 中已内联该 33 行常量表
 BITNR = [...]
 
 
@@ -423,7 +423,7 @@ if __name__ == "__main__":
 运行：
 
 ```bash
-$ .venv/bin/python exploits/duomaomao_solve.py
+$ .venv/bin/python exploits/misc/duomaomao_solve.py
 FLAG: GWHT{ozqgVLoI1DvK8giNVdvGslr_aZKKwNuv_q-FzqB5N3hHHqn3}
 ```
 

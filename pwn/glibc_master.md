@@ -115,7 +115,7 @@ exit() -> _IO_flush_all_lockp -> _IO_wfile_overflow -> _IO_wdoallocbuf
 
 ## Exploit
 
-见 `exploits/glibc_master.py`（本地/远程：`python3 glibc_master.py [REMOTE=1]`）。
+见 `exploits/pwn/glibc_master.py`（本地/远程：`python3 glibc_master.py [REMOTE=1]`）。
 
 核心代码：
 

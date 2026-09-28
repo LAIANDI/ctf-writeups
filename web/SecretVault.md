@@ -138,7 +138,7 @@ client ──GET /dashboard, Connection: X-User──▶ Go authorizer :5555
 
 ## 6. Full script
 
-`exploits/SecretVault.py`：
+`exploits/web/SecretVault.py`：
 
 ```python
 #!/usr/bin/env python3
@@ -178,7 +178,7 @@ if __name__ == "__main__":
 运行：
 
 ```bash
-python3 exploits/SecretVault.py http://49.232.142.230:19625
+python3 exploits/web/SecretVault.py http://49.232.142.230:19625
 ```
 
 等价一行命令：

@@ -126,7 +126,7 @@ flag{10ve_exCe1_!!!}
 
 ## 6. 完整脚本
 
-`exploits/office_love_chain.py`：
+`exploits/misc/office_love_chain.py`：
 
 ```python
 #!/usr/bin/env python3
@@ -173,13 +173,13 @@ print('FLAG:', out)
 运行：
 
 ```bash
-.venv/bin/python exploits/office_love_chain.py challenges/misc1/皮皮特的外套.zip
+.venv/bin/python exploits/misc/office_love_chain.py challenges/misc1/皮皮特的外套.zip
 ```
 
 ## 7. 实际输出
 
 ```text
-$ .venv/bin/python exploits/office_love_chain.py challenges/misc1/皮皮特的外套.zip
+$ .venv/bin/python exploits/misc/office_love_chain.py challenges/misc1/皮皮特的外套.zip
 FLAG: flag{10ve_exCe1_!!!}
 ```
 

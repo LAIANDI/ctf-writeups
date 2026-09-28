@@ -114,7 +114,7 @@ system("/bin/sh");
 
 ## 完整 Exploit
 
-文件：`exploits/pwn83.py`
+文件：`exploits/pwn/pwn83.py`
 
 ```python
 from pwn import *
@@ -167,7 +167,7 @@ print(io.recvrepeat(3).decode(errors="replace"))
 运行：
 
 ```bash
-python3 -c 'import runpy; runpy.run_path("exploits/pwn83.py", run_name="__main__")'
+python3 -c 'import runpy; runpy.run_path("exploits/pwn/pwn83.py", run_name="__main__")'
 ```
 
 实测输出：

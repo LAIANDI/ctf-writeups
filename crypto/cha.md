@@ -85,7 +85,7 @@ sub = ("%02000d" % R)[:1000]      # 等价于 str(s)[-2000:-1000]
 
 ## Exploit
 
-见 `exploits/cha_solve.py`。核心代码：
+见 `exploits/crypto/cha_solve.py`。核心代码：
 
 ```python
 import ast, hashlib

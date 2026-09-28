@@ -222,7 +222,7 @@ flag{why_m0dify_pUx_SheLL}
 
 ## 7. 完整脚本
 
-见 `exploits/Re2.py`（自包含，Unicorn 静态脱壳 + 逆运算）：
+见 `exploits/reverse/Re2.py`（自包含，Unicorn 静态脱壳 + 逆运算）：
 
 ```python
 #!/usr/bin/env python3
@@ -266,7 +266,7 @@ if __name__ == "__main__":
 
 ```bash
 cd /Users/laiandi/ctf
-.venv/bin/python exploits/Re2.py challenges/Re2.exe
+.venv/bin/python exploits/reverse/Re2.py challenges/Re2.exe
 ```
 
 ---
@@ -274,7 +274,7 @@ cd /Users/laiandi/ctf
 ## 8. 实际输出
 
 ```text
-$ .venv/bin/python exploits/Re2.py challenges/Re2.exe
+$ .venv/bin/python exploits/reverse/Re2.py challenges/Re2.exe
 length : 20
 flag   : flag{why_m0dify_pUx_SheLL}
 ```

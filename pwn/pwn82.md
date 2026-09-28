@@ -150,13 +150,13 @@ io.interactive()
 在项目根目录执行：
 
 ```bash
-.venv/bin/python exploits/pwn82.py
+.venv/bin/python exploits/pwn/pwn82.py
 ```
 
 也可以显式指定远程地址和端口：
 
 ```bash
-.venv/bin/python exploits/pwn82.py HOST=pwn.challenge.ctf.show PORT=28290
+.venv/bin/python exploits/pwn/pwn82.py HOST=pwn.challenge.ctf.show PORT=28290
 ```
 
 ## 总结

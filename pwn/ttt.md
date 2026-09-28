@@ -166,7 +166,7 @@ if (you_move()) {
 
 ## 完整 Exploit
 
-文件：`exploits/ttt.py`
+文件：`exploits/pwn/ttt.py`
 
 ```python
 #!/usr/bin/env python3
@@ -194,7 +194,7 @@ io.interactive()
 运行：
 
 ```bash
-python3 exploits/ttt.py
+python3 exploits/pwn/ttt.py
 ```
 
 输出：
