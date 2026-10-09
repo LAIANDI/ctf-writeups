@@ -5,7 +5,7 @@
 - **题目 / 来源：** `b4bycoffee`（`b4bycoffee-0.0.1-SNAPSHOT.jar`）
 - **方向：** web
 - **远程地址：** `http://49.232.142.230:18056`
-- **附件：** `/Users/laiandi/ctf/challenges/b4bycoffee-0.0.1-SNAPSHOT.jar`
+- **附件：** `/Users/laiandi/ctf/challenges/web/b4bycoffee-0.0.1-SNAPSHOT.jar`
   - sha256 `ba0177c10cfb8c535f954728ab61b27f5a6d6bc7f09297a69903ad912400bae1`
 - **运行环境：** Spring Boot 2.7.2 fat jar，`Build-Jdk-Spec: 1.8`，内嵌 Tomcat 9.0.65，
   自带 `rome-1.7.0.jar` / `rome-utils-1.7.0.jar` / `jdom2-2.0.6.1.jar`

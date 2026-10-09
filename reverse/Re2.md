@@ -6,7 +6,7 @@
 | --- | --- |
 | 题目名称 | Re2.exe（2022 第二届网鼎杯 青龙组 逆向签到第一题） |
 | 类型 | Reverse |
-| 附件 | `challenges/Re2.exe` |
+| 附件 | `challenges/reverse/Re2.exe` |
 | SHA256 | `313a5dddca33d69a48acc41dfcb491c6a1f8d73fb714c117608dddd43249f690` |
 | 架构/环境 | PE32+ (x86-64, Windows, VS Debug 编译，PDB: `wdbRe2.pdb`) |
 | 加壳 | UPX（段名被改成 `FUK0`/`FUK1`） |
@@ -257,7 +257,7 @@ def solve(path):
     return "".join(chr(((t ^ 0x50) - 0x0A) ^ 0x66) for t in table)
 
 if __name__ == "__main__":
-    exe = sys.argv[1] if len(sys.argv) > 1 else "challenges/Re2.exe"
+    exe = sys.argv[1] if len(sys.argv) > 1 else "challenges/reverse/Re2.exe"
     body = solve(exe)
     print(f"flag   : flag{{{body}}}")
 ```
@@ -266,7 +266,7 @@ if __name__ == "__main__":
 
 ```bash
 cd /Users/laiandi/ctf
-.venv/bin/python exploits/reverse/Re2.py challenges/Re2.exe
+.venv/bin/python exploits/reverse/Re2.py challenges/reverse/Re2.exe
 ```
 
 ---
@@ -274,7 +274,7 @@ cd /Users/laiandi/ctf
 ## 8. 实际输出
 
 ```text
-$ .venv/bin/python exploits/reverse/Re2.py challenges/Re2.exe
+$ .venv/bin/python exploits/reverse/Re2.py challenges/reverse/Re2.exe
 length : 20
 flag   : flag{why_m0dify_pUx_SheLL}
 ```

@@ -7,7 +7,7 @@
 | 题目 | 办公室爱情（Office Love） |
 | 赛事 | 长城杯 2022 政企组 Misc（NSSCTF 复现版） |
 | 分类 | Misc |
-| 附件 | `challenges/misc1/沃德.docx` / `皮迪符.pdf` / `皮皮特的外套.zip` |
+| 附件 | `challenges/misc/misc1/沃德.docx` / `皮迪符.pdf` / `皮皮特的外套.zip` |
 | 附件 SHA256 | `沃德.docx` = `3c0f70932f30bf244d69b733bd18e39685a14b91f9fdc38286ecd2bac65f689d`<br>`皮迪符.pdf` = `4d737c0ac686103dd8bad7084b9ca4a16b98fc7614718542fc32d07164757ee3`<br>`皮皮特的外套.zip` = `44ad777b3759c5940255e1abf3f508cd9209796337ac2f9ad2ab72f0c5039515` |
 | 文件格式 | docx (OOXML) / PDF 1.5 / ZIP (传统 ZipCrypto) / pptx (OOXML) |
 | 环境 | 本机 Python 3（`zipfile` + `unzip`），wbStego4open |
@@ -18,7 +18,7 @@
 ## 2. Recon
 
 ```bash
-$ file challenges/misc1/*
+$ file challenges/misc/misc1/*
 沃德.docx:        Microsoft Word 2007+
 皮迪符.pdf:       PDF document, version 1.5
 皮皮特的外套.zip: Zip archive data, at least v2.0 to extract, encrypted
@@ -173,13 +173,13 @@ print('FLAG:', out)
 运行：
 
 ```bash
-.venv/bin/python exploits/misc/office_love_chain.py challenges/misc1/皮皮特的外套.zip
+.venv/bin/python exploits/misc/office_love_chain.py challenges/misc/misc1/皮皮特的外套.zip
 ```
 
 ## 7. 实际输出
 
 ```text
-$ .venv/bin/python exploits/misc/office_love_chain.py challenges/misc1/皮皮特的外套.zip
+$ .venv/bin/python exploits/misc/office_love_chain.py challenges/misc/misc1/皮皮特的外套.zip
 FLAG: flag{10ve_exCe1_!!!}
 ```
 

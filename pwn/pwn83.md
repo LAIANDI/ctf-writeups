@@ -3,7 +3,7 @@
 ## 题目信息
 
 - 目标：`pwn.challenge.ctf.show:28168`
-- 本地文件：`challenges/pwn83`
+- 本地文件：`challenges/pwn/pwn83`
 - 类型：栈溢出、ret2libc
 - Flag：`ctfshow{812cf388-54b4-4d84-9381-9f64e66c319d}`
 

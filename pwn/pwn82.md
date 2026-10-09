@@ -2,7 +2,7 @@
 
 ## 题目信息
 
-目标文件：`challenges/pwn82`
+目标文件：`challenges/pwn/pwn82`
 
 ```text
 Arch:    i386 (32-bit)
@@ -105,7 +105,7 @@ context.log_level = args.LOG or "info"
 
 HOST = args.HOST or "pwn.challenge.ctf.show"
 PORT = int(args.PORT or 28290)
-elf = ELF("./challenges/pwn82", checksec=False)
+elf = ELF("./challenges/pwn/pwn82", checksec=False)
 
 OFFSET = 112
 LIBC_WRITE = 0xE57F0

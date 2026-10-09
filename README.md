@@ -20,13 +20,14 @@
 | superheap | CISCN 2024 SuperHeap | Go + protobuf、堆溢出、tcache poisoning、House of Some、ORW | [wp](pwn/superheap.md) |
 | ttt | CTFshow | 整数溢出、数组越界、游戏逻辑绕过 | [wp](pwn/ttt.md) |
 
-## Crypto (4)
+## Crypto (5)
 
 | 题目 | 赛事 / 平台 | 考点 | Writeup |
 | --- | --- | --- | --- |
 | cha | — | 线性递推 + 矩阵快速幂 + AES-ECB | [wp](crypto/cha.md) |
 | linearAlgebra | 羊城杯 2022 | 线性代数 + 格约化（LLL/BKZ） | [wp](crypto/linearAlgebra.md) |
 | lrsa | DASCTF | RSA + 二维格约化 | [wp](crypto/lrsa.md) |
+| RSA_NestingDoll | CCB CISCN 2025 Quals | 内外层 RSA 套娃、`λ(n)` 倍数泄漏、multiprime 分解 | [wp](crypto/RSA_NestingDoll.md) |
 | task | — | 四元数群上的离散对数 | [wp](crypto/task.md) |
 
 ## Reverse (4)

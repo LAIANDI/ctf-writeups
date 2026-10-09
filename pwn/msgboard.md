@@ -5,7 +5,7 @@
 - 题目：DASCTF message board（留言板）
 - 类型：pwn / 栈溢出 + 格式化字符串泄漏 + `leave;ret` 栈迁移 + 二次 read 到 bss + ORW
 - 远端：`49.232.142.230:11561`（最初为 `10270`，实例重启后端口变为 `11561`，以当前端口为准）
-- 附件：`challenges/pwn`
+- 附件：`challenges/pwn/pwn`
   - sha256：`3603c26c85c22b771dc2fa0e4b539dd490a4aee7bbb13ba20eb715f90e91faa4`
   - ELF 64-bit LSB executable, x86-64, dynamically linked, **stripped**
 - 运行环境：
@@ -19,8 +19,8 @@
 ## 2. 侦察
 
 ```
-$ file challenges/pwn
-challenges/pwn: ELF 64-bit LSB executable, x86-64, ... dynamically linked, stripped
+$ file challenges/pwn/pwn
+challenges/pwn/pwn: ELF 64-bit LSB executable, x86-64, ... dynamically linked, stripped
 
 $ # 保护（pwntools checksec）
 Arch: amd64-64-little
@@ -35,7 +35,7 @@ SHSTK/IBT: Enabled   # 仅为 GNU property，远端未强制（后续 ROP 正常
 （`seccomp_init / seccomp_rule_add / seccomp_load`），**没有 `system`、`open`、`write`**。
 
 ```
-$ strings -n5 challenges/pwn
+$ strings -n5 challenges/pwn/pwn
 ...
 libseccomp.so.2
 seccomp_rule_add

@@ -3,7 +3,7 @@
 ## 题目信息
 
 - 目标：`pwn.challenge.ctf.show:28302`
-- 附件：`challenges/4-SuperHeap.7z`
+- 附件：`challenges/pwn/4-SuperHeap.7z`
 - 二进制：`SuperHeap`
 - 类型：Go + protobuf、堆溢出、tcache poisoning、House of Some、ORW
 
@@ -224,7 +224,7 @@ import struct
 context.arch = "amd64"
 
 io = remote("pwn.challenge.ctf.show", 28302)
-libc = ELF("challenges/4-SuperHeap/libc.so.6", checksec=False)
+libc = ELF("challenges/pwn/4-SuperHeap/libc.so.6", checksec=False)
 
 def varint(value):
     out = b""

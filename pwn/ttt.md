@@ -3,7 +3,7 @@
 ## 题目信息
 
 - 目标：`pwn.challenge.ctf.show:28229`
-- 附件：`challenges/ttt.c`
+- 附件：`challenges/pwn/ttt.c`
 - 类型：整数溢出、数组越界、游戏逻辑绕过
 - Flag：`ctfshow{26bf2f56-647e-42e9-b7c0-fa2e6055d1ca}`
 

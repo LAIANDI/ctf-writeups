@@ -6,7 +6,7 @@
 | --- | --- |
 | 题目名称 | Dual personality.exe |
 | 类型 | Reverse（Windows PE / 32+64 位混合代码） |
-| 附件 | `challenges/tempdir-4/REVERSE附件/Dual personality.exe` |
+| 附件 | `challenges/reverse/tempdir-4/REVERSE附件/Dual personality.exe` |
 | SHA256 | `d7116c32dc5f2125ee489559eb4fce80adef00ea1fb4af24fdc949c0a1d89fa2` |
 | 架构/环境 | PE32 executable (console) Intel 80386（WoW64 下运行，使用 Heaven's Gate） |
 | 编译器信息 | PDB `E:\Project\Dual personality\Debug\Dual personality.pdb`，VS Debug（`ucrtbased.dll` / `VCRUNTIME140D.dll`） |
